@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/SamDonner/vanillaJsGames/issues"
   },
-  "homepage": "https://github.com/SamDonner/vanillaJsGames#readme"
+  "homepage": "https://github.com/SamDonner/vanillaJsGames#readme",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.2"
+  }
 }
